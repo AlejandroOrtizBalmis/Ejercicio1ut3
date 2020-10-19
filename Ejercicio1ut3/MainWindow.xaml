@@ -1,0 +1,72 @@
+﻿<Window x:Class="Ejercicio1ut3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ejercicio1ut3"
+        mc:Ignorable="d"
+        Title="Formulario StackPanel"
+        Height="330"
+        MaxWidth="1200"
+        Width="800">
+    <StackPanel>
+        <StackPanel Margin="10" Height="60">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1"
+                                     StartPoint="0.5,0">
+                    <GradientStop Color="#FF50F901"
+                                  Offset="0" />
+                    <GradientStop Color="#FFFDFDFD"
+                                  Offset="0.6" />
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <TextBlock FontWeight="Bold"
+                       FontSize="16"
+                       Margin="5">Nombre</TextBlock>
+            <TextBox Margin="5"></TextBox>
+        </StackPanel>
+        <StackPanel Margin="10"
+                    Height="60">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1"
+                                     StartPoint="0.5,0">
+                    <GradientStop Color="#FF0139F9"
+                                  Offset="0" />
+                    <GradientStop Color="#FFFDFDFD"
+                                  Offset="0.6" />
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <TextBlock FontWeight="Bold"
+                       FontSize="16"
+                       Margin="5">Dirección</TextBlock>
+            <TextBox Margin="5"></TextBox>
+        </StackPanel>
+        <StackPanel Margin="10"
+                    Height="60">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1"
+                                     StartPoint="0.5,0">
+                    <GradientStop Color="#FFF90C01"
+                                  Offset="0" />
+                    <GradientStop Color="#FFFDFDFD"
+                                  Offset="0.6" />
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <TextBlock FontWeight="Bold"
+                       FontSize="16"
+                       Margin="5">Correo electrónico</TextBlock>
+            <TextBox Width="700"
+                     HorizontalAlignment="Left"
+                     Margin="5"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal"
+                    Margin="15"
+                    HorizontalAlignment="Right">
+            <Button Width="100"
+                    Margin="5">Aceptar</Button>
+            <Button Width="100"
+                    Margin="5">Cancelar</Button>
+        </StackPanel>
+        
+    </StackPanel>
+</Window>
