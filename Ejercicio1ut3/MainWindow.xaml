@@ -58,6 +58,7 @@
             <TextBox Width="700"
                      HorizontalAlignment="Left"
                      Margin="5"></TextBox>
+            
         </StackPanel>
         <StackPanel Orientation="Horizontal"
                     Margin="15"
