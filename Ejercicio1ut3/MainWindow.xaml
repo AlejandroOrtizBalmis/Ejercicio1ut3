@@ -10,8 +10,22 @@
         MaxWidth="1200"
         Width="800"
         Icon="FormularioStackPanel.ico">
+    <Window.Resources>
+        <Style TargetType="StackPanel" x:Key="Form">
+            <Setter Property="Height"
+                    Value="60" />
+            <Setter Property="Margin"
+                    Value="10" />
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Width"
+                    Value="100" />
+            <Setter Property="Margin"
+                    Value="5" />
+        </Style>
+    </Window.Resources>
     <StackPanel>
-        <StackPanel Margin="10" Height="60">
+        <StackPanel Style="{StaticResource Form}">
             <StackPanel.Background>
                 <LinearGradientBrush EndPoint="0.5,1"
                                      StartPoint="0.5,0">
@@ -26,8 +40,7 @@
                        Margin="5">Nombre</TextBlock>
             <TextBox Margin="5"></TextBox>
         </StackPanel>
-        <StackPanel Margin="10"
-                    Height="60">
+        <StackPanel Style="{StaticResource Form}">
             <StackPanel.Background>
                 <LinearGradientBrush EndPoint="0.5,1"
                                      StartPoint="0.5,0">
@@ -42,8 +55,7 @@
                        Margin="5">Dirección</TextBlock>
             <TextBox Margin="5"></TextBox>
         </StackPanel>
-        <StackPanel Margin="10"
-                    Height="60">
+        <StackPanel Style="{StaticResource Form}">
             <StackPanel.Background>
                 <LinearGradientBrush EndPoint="0.5,1"
                                      StartPoint="0.5,0">
@@ -64,10 +76,8 @@
         <StackPanel Orientation="Horizontal"
                     Margin="15"
                     HorizontalAlignment="Right">
-            <Button Width="100"
-                    Margin="5">Aceptar</Button>
-            <Button Width="100"
-                    Margin="5">Cancelar</Button>
+            <Button>Aceptar</Button>
+            <Button>Cancelar</Button>
         </StackPanel>
         
     </StackPanel>
