@@ -11,11 +11,24 @@
         Width="800"
         Icon="FormularioStackPanel.ico">
     <Window.Resources>
-        <Style TargetType="StackPanel" x:Key="Form">
+        <Style TargetType="StackPanel"
+               x:Key="Form">
             <Setter Property="Height"
                     Value="60" />
             <Setter Property="Margin"
                     Value="10" />
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontWeight"
+                    Value="Bold" />
+            <Setter Property="Margin"
+                    Value="5" />
+            <Setter Property="FontSize"
+                    Value="16" />
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Margin"
+                    Value="5" />
         </Style>
         <Style TargetType="Button">
             <Setter Property="Width"
@@ -35,9 +48,7 @@
                                   Offset="0.6" />
                 </LinearGradientBrush>
             </StackPanel.Background>
-            <TextBlock FontWeight="Bold"
-                       FontSize="16"
-                       Margin="5">Nombre</TextBlock>
+            <TextBlock >Nombre</TextBlock>
             <TextBox Margin="5"></TextBox>
         </StackPanel>
         <StackPanel Style="{StaticResource Form}">
@@ -50,10 +61,8 @@
                                   Offset="0.6" />
                 </LinearGradientBrush>
             </StackPanel.Background>
-            <TextBlock FontWeight="Bold"
-                       FontSize="16"
-                       Margin="5">Dirección</TextBlock>
-            <TextBox Margin="5"></TextBox>
+            <TextBlock >Dirección</TextBlock>
+            <TextBox></TextBox>
         </StackPanel>
         <StackPanel Style="{StaticResource Form}">
             <StackPanel.Background>
@@ -65,12 +74,9 @@
                                   Offset="0.6" />
                 </LinearGradientBrush>
             </StackPanel.Background>
-            <TextBlock FontWeight="Bold"
-                       FontSize="16"
-                       Margin="5">Correo electrónico</TextBlock>
+            <TextBlock>Correo electrónico</TextBlock>
             <TextBox Width="700"
-                     HorizontalAlignment="Left"
-                     Margin="5"></TextBox>
+                     HorizontalAlignment="Left"></TextBox>
             
         </StackPanel>
         <StackPanel Orientation="Horizontal"
